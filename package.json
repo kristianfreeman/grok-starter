@@ -12,7 +12,9 @@
     "pages:deploy": "astro build && wrangler pages deploy ./dist"
   },
   "dependencies": {
+    "@ai-sdk/openai": "^0.0.71",
     "@astrojs/cloudflare": "^11.2.0",
+    "ai": "^3.4.33",
     "astro": "^4.16.9"
   }
 }
