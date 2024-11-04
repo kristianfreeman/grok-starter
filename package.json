@@ -1,0 +1,18 @@
+{
+  "name": "grok-starter",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "pages:dev": "wrangler pages dev --compatibility-date=2024-11-04 --proxy 3000 -- astro dev",
+    "pages:deploy": "astro build && wrangler pages deploy ./dist"
+  },
+  "dependencies": {
+    "@astrojs/cloudflare": "^11.2.0",
+    "astro": "^4.16.9"
+  }
+}
