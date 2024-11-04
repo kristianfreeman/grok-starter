@@ -8,9 +8,11 @@ export async function POST({ locals, request }: { locals: App.Locals; request: R
     return new Response('No API key provided', { status: 400 });
   }
 
+  const baseURL = 'https://gateway.ai.cloudflare.com/v1/dc56444c4c955a1653106ccf997c1067/grok-starter/grok'
+
   const xai = createOpenAI({
     name: 'xai',
-    baseURL: 'https://api.x.ai/v1',
+    baseURL,
     apiKey
   });
 
